@@ -7,8 +7,11 @@ sudo apt install -y multipass
 echo "available images"
 multipass find
 
-
+echo "https://multipass.run/docs/multipass-cli-commands"
 echo "https://multipass.run/docs/create-an-instance"
+echo "https://www.conventionalcommits.org/en/v1.0.0/"
+
+
 
 echo "launch wordpress instance"
 multipass launch jammy --name wordpress --cpus 1 --disk 10G --memory 2G --network en0 --network name=bridge0,mode=manual
